@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 :root{
+    --white-color:#ffffff;
     --body-color:#FCFCFC;
     --container-color:#ffffff;
     --first-color:#FFB568;
@@ -13,8 +14,9 @@
     --text-color-light:#8C8C8C;
     --button-color:#2B2B2B;
     --border-color:#F0F0F0;
+    --fs-40px:40px;
     --fs-36px:36px;
-    --fs-36px:32px;
+    --fs-32px:32px;
     --fs-24px:24px;
     --fs-20px:20px;
     --fs-16px:16px;
@@ -42,7 +44,7 @@ body.darkmode{
     --title-color:#F2F2F2;
     --text-color:#BFBFBF;
     --text-color-light:#8C8C8C;
-    --button-color:#2B2B2B;
+    --button-color:#3D3D3D;
     --border-color:#333333;
 }
 section{
@@ -74,5 +76,78 @@ span{
 }
 img{
     max-width: 100%;
+}
+/* Utitlity Classes */
+.flex{
+    display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.i-flex{
+    display: inline-flex;
+    align-items: center;
+}
+.grid{
+    display: grid;
+}
+h1.title{
+    font-size: clamp(var(--fs-32px), 5vw, var(--fs-40px));
+    font-weight: var(--fw-700);
+    color: var(--title-color);
+}
+h2.title{
+    font-size: clamp(var(--fs-16px), 5vw, var(--fs-20px));
+    font-weight: var(--fw-500);
+    color: var(--title-color);
+}
+.overline{
+    position: relative;
+    padding-top: 16px;
+}
+.overline::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 67px;
+    height: 1px;
+    background-color: var(--first-color);
+}
+h3.title{
+    font-size: clamp(var(--fs-24px), 5vw, var(--fs-36px));
+    font-weight: var(--fw-500);
+    color: var(--title-color);
+}
+button.cart-btn{
+    display: inline-flex;
+    padding: 20px 32px;
+    font-size: clamp(var(--fs-15px), 5vw, var(--fs-16px));
+    font-weight: var(--fw-500);
+    background-color: var(--button-color);
+    color: var(--white-color);
+}
+button.special-cart-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 8px;
+    background-color: var(--button-color);
+}
+span.product-name{
+    font-size: clamp(var(--fs-13px), 5vw, var(--fs-14px));
+    font-weight: var(--fw-500);
+    color: var(--title-color);
+}
+span.product-price{
+    font-size: var(--fs-14px);
+    font-weight: var(--fw-500);
+    color: var(--first-color);
 }
 /*  */
