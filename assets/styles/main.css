@@ -34,6 +34,7 @@ html{
 }
 body{
     font-family: "Roboto", serif;
+    background-color: var(--body-color);
 }
 body.darkmode{
     --body-color:#1F1F1F;
@@ -51,7 +52,7 @@ section{
     padding: var(--main-section-padding);
 }
 .container{
-    width: min(1024px, 100% - 24px);
+    width: min(1024px, 100% - 40px);
     margin: auto;
 }
 ul{
@@ -151,3 +152,76 @@ span.product-price{
     color: var(--first-color);
 }
 /* Component */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 25px 0;
+    background-color: transparent;
+}
+header .container{
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+header .container .logo a{
+    gap: 10px;
+    font-size: var(--fs-16px);
+    font-weight: var(--fw-700);
+    color: var(--title-color);
+}
+header .container nav .icons{
+    gap: 15px;
+}
+header .container nav ul li a.active,
+header .container nav ul li a:hover{
+    color: var(--first-color);
+}
+@media (max-width:991px) {
+    header .container nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        max-width: 360px;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        text-transform: uppercase;
+        font-size: var(--fs-24px);
+        font-weight: var(--fw-500);
+        color: var(--title-color);
+        box-shadow: 3px 4px 10px 1px rgba(0 0 0 /.25);
+        background-color: var(--body-color);
+    }
+    header .container nav ul.menu-toggle{
+        right: 0;
+    }
+    header .container nav ul li.close-menu{
+        align-self: end;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width:992px) {
+    header .container nav{
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header .container nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 80px;
+    }
+    header .container nav ul li.close-menu{
+    display: none;
+    }
+    header .container nav .icons .menu-icon{
+    display: none;
+    }
+}
