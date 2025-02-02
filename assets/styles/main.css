@@ -154,6 +154,9 @@ button.special-cart-btn{
     background-color: var(--button-color);
     cursor: pointer;
 }
+.text-center{
+    text-align: center;
+}
 span.product-name{
     font-size: clamp(var(--fs-13px), 5vw, var(--fs-14px));
     font-weight: var(--fw-500);
