@@ -35,12 +35,14 @@ let mode = localStorage.getItem("mode");
 function lightMode(){
     document.body.classList.remove("darkmode");
     logoIcon.src="assets/icons/logo-dark.webp";
+    themeIcon.src = "assets/icons/moon-darkmode.webp"
     closeIcon.src="assets/icons/close-dark.webp";
     localStorage.setItem("mode","lightMode");
 }
 function darkMode(){
     document.body.classList.add("darkmode");
     logoIcon.src="assets/icons/logo-light.webp";
+    themeIcon.src = "assets/icons/sun-lightmode.webp"
     closeIcon.src="assets/icons/close-light.webp";
     localStorage.setItem("mode","dark");
 }
