@@ -194,6 +194,15 @@ header .container nav ul li a.active,
 header .container nav ul li a:hover{
     color: var(--first-color);
 }
+header .container nav .icons>div{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--first-color);
+}
 @media (max-width:991px) {
     header .container nav ul{
         display: flex;
@@ -240,7 +249,7 @@ header .container nav ul li a:hover{
     header .container nav ul li.close-menu{
     display: none;
     }
-    header .container nav .icons .menu-icon{
+    header .container nav .icons .menu-icon-box{
     display: none;
     }
 }
