@@ -383,3 +383,17 @@ div.overlay{
         transform: translate(65px, -65px);
     }
 }
+.products .container .products-list{
+    grid-template-columns: repeat(auto-fit , min(220px , 100%));
+    justify-content: center;
+    align-items: start;
+    gap: 40px 50px;
+    margin-top: 60px;
+}
+.products .container .products-list .col{
+    gap: 10px;
+    position: relative;
+    padding: 30px 10px 50px 10px;
+    box-shadow: 0 4px 4px 0 rgba(0 0 0 / .19);
+    background-color: var(--container-color);
+}
