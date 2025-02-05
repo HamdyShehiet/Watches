@@ -398,3 +398,68 @@ div.overlay{
     box-shadow: 0 4px 4px 0 rgba(0 0 0 / .19);
     background-color: var(--container-color);
 }
+.testimonials .container{
+    align-items: center;
+    gap: 60px;
+}
+.testimonials .container article.article{
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+.testimonials .container article.article .date{
+    font-size: var(--fs-16px);
+    font-weight: var(--fw-500);
+    color: var(--title-color);
+}
+.testimonials .container article.article .person-info{
+    align-items: center;
+    gap: 15px;
+}
+.testimonials .container article.article .person-info span{
+    display: block;
+}
+.testimonials .container article.article .person-info span.person-name{
+    font-size: var(--fs-16px);
+    font-weight: var(--fw-500);
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+.testimonials .container article.article .person-info span.job{
+    font-size: var(--fs-13px);
+    color: var(--title-color);
+}
+.testimonials .container article.article .slider-btns{
+    gap: 30px;
+}
+.testimonials .container article.article .slider-btns>div{
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    box-shadow: 0 4px 4px 0 rgba(0 0 0 / .15);
+    background-color: var(--container-color);
+}
+@media (max-width:991px) {
+    .testimonials .container{
+        flex-direction: column;
+    }
+    .testimonials .container .image img{
+        border-radius: 10px;
+        box-shadow: 0 6px 6px 0 rgba(0 0 0 / .3);
+    }
+}
+@media (min-width:992px) {
+    .testimonials .container{
+        justify-content: space-between;
+    }
+    .testimonials .container article.article{
+        width: 35%;
+    }
+    .testimonials .container .image{
+        width: 40%;
+        background-color: var(--first-color);
+    }
+    .testimonials .container .image img{
+        transform: translate(-65px, 65px);
+    }
+}
