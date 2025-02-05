@@ -463,3 +463,43 @@ div.overlay{
         transform: translate(-65px, 65px);
     }
 }
+.new-arrivals .container .Products-list{
+    grid-template-columns: repeat(auto-fit , min(238px , 100%));
+    justify-content: center;
+    align-items: start;
+    gap: 40px 24px;
+    min-height: 75vh;
+    margin-top: 60px;
+}
+.new-arrivals .container .Products-list .col{
+    gap: 14px;
+    position: relative;
+    padding: 30px 10px 50px 10px;
+    box-shadow: 0 4px 4px 0 rgba(0 0 0 / .19);
+    background-color: var(--container-color);
+}
+.new-arrivals .container .Products-list .col:hover {
+    background-color: var(--first-color);
+}
+.new-arrivals .container .Products-list .col .cart-btn{
+    display: none;
+}
+.new-arrivals .container .Products-list .col:hover .cart-btn{
+    display: inline-flex;
+}
+.new-arrivals .container .Products-list .col:hover .product-price{
+    color: var(--title-color);
+}
+.new-arrivals .container .Products-list .col:hover .sale-title{
+    background-color: var(--button-color);
+}
+.new-arrivals .container .Products-list .col .sale-title{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    padding: 10px 20px;
+    font-size: var(--fs-14px);
+    font-weight: var(--fw-500);
+    color: var(--white-color);
+    background-color: var(--first-color);
+}
