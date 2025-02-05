@@ -319,6 +319,7 @@ div.overlay{
     justify-content: center;
     align-items: start;
     gap: 40px;
+    min-height: 75vh;
     margin-top: 60px;
 }
 .featured .container .featured-list .col{
