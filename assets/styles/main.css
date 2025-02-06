@@ -516,7 +516,10 @@ div.overlay{
 .subscribe .container .info h2{
     font-size: var(--fs-36px);
     font-weight: var(--fw-500);
-    color: var(--title-color);
+    color: #2E2E2E;
+}
+.subscribe .container .info p.description{
+    color: #595959;
 }
 .subscribe .container form input[type ="email"]{
     max-width: 310px;
