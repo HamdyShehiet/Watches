@@ -534,6 +534,9 @@ div.overlay{
         flex-wrap: wrap;
         row-gap: 20px;
     }
+    .subscribe .container .info{
+        text-align: center;
+    }
 }
 @media (min-width:992px) {
     .subscribe .container {
