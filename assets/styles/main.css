@@ -53,7 +53,7 @@ body.darkmode{
     --button-color:#3D3D3D;
     --border-color:#333333;
 }
-section{
+main section{
     padding: var(--main-section-padding);
 }
 .container{
@@ -542,6 +542,9 @@ div.overlay{
         grid-template-columns: 40% 45%;
     }
 }
+footer section{
+    padding: 35px 0;
+}
 footer .footer-up .container{
     grid-template-columns: repeat(auto-fit,min(150px,100%));
     justify-content: center;
@@ -565,4 +568,8 @@ footer .footer-up .container .col ul:not(ul.social-links){
 footer .footer-up .container .col ul.social-links{
     align-items: center;
     gap: 20px;
+}
+footer .copyrights .container{
+    padding-top: 35px;
+    border-top: 1px solid var(--border-color);
 }
