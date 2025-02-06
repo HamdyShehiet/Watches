@@ -542,3 +542,27 @@ div.overlay{
         grid-template-columns: 40% 45%;
     }
 }
+footer .footer-up .container{
+    grid-template-columns: repeat(auto-fit,min(150px,100%));
+    justify-content: center;
+    gap: 40px 141px;
+}
+footer .footer-up .container .col span.links-title{
+    font-size: var(--fs-20px);
+    font-weight: var(--fw-500);
+    color: var(--title-color);
+}
+footer .footer-up .container .col ul{
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+    font-size: var(--fs-16px);
+    color: var(--text-color);
+}
+footer .footer-up .container .col ul:not(ul.social-links){
+    flex-direction: column;
+}
+footer .footer-up .container .col ul.social-links{
+    align-items: center;
+    gap: 20px;
+}
