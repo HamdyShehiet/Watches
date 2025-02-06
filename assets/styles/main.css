@@ -133,7 +133,8 @@ p.description{
     font-size: var(--fs-16px);
     color: var(--text-color);
 }
-.cart-btn{
+.cart-btn,
+.subscribe-btn{
     display: inline-flex;
     padding: 20px 32px;
     font-size: clamp(var(--fs-15px), 5vw, var(--fs-16px));
